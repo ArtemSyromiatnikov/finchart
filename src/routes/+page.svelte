@@ -26,8 +26,8 @@
 		}
 	}
 
-	const beginDate = new Date('2023-10-01');
-	const endDate = new Date('2023-11-01');
+	const beginDate = new Date('2023-01-01');
+	const endDate = new Date('2023-02-01');
 	const octoberTx = allTransactions
 		.filter((tx) => tx.transactionDay >= beginDate && tx.transactionDay < endDate)
 		.toSorted((txA, txB) => txA.transactionDay - txB.transactionDay);
