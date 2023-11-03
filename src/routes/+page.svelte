@@ -62,7 +62,7 @@
 		{#each daySummary.transactions as tx}
 			<li>
 				<span class:weekend={daySummary.isWeekend}
-					>[{daySummary.weekday} {daySummary.date.toLocaleDateString()}]</span
+					>[{daySummary.weekday} {daySummary.date.toLocaleDateString('sv-SE')}]</span
 				>: <strong>{tx.amount}</strong> at {tx.description}
 			</li>
 		{/each}
